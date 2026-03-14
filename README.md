@@ -64,12 +64,12 @@ A modern Progressive Web App (PWA) built with React that enables music lovers to
    Firebase configuration is already set in `src/config.js`:
    ```javascript
    const firebaseConfig = {
-     apiKey: "AIzaSyDSWitlWh_sRMqlxNd5yWcbX0YPLAfIjTs",
-     authDomain: "musi-love.firebaseapp.com",
-     projectId: "musi-love",
-     storageBucket: "musi-love.firebasestorage.app",
-     messagingSenderId: "277579961390",
-     appId: "1:277579961390:web:ec7749665ebca0f7d17bbf"
+     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+     authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+     projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+     storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+     messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+     appId: import.meta.env.VITE_FIREBASE_APP_ID
    };
    ```
 

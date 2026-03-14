@@ -6,7 +6,7 @@
 .player-container {
   display: grid;
   grid-template-columns: 1fr 400px;
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   background: var(--background);
 }
 
@@ -19,7 +19,7 @@
 
 .player-wrapper {
   width: 100%;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   aspect-ratio: 16 / 9;
   background: black;
@@ -29,7 +29,7 @@
 }
 
 .now-playing {
-  max-width: 900px;
+  max-width: 1400px;
   margin: 2rem auto 0;
   width: 100%;
 }
